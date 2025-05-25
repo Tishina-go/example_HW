@@ -25,7 +25,7 @@ public class SearchTest {
         Configuration.browser = browser;
 
         switch (browser) {
-            case "firefox" -> WebDriverManager.firefoxdriver().setup();
+            case "firefox" -> WebDriverManager.firefoxdriver(2).setup(1);
             //case "edge"    -> WebDriverManager.edgedriver().setup();
             //case "opera"   -> WebDriverManager.operadriver().setup();
             //default        -> WebDriverManager.chromedriver().setup();
