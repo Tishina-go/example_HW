@@ -36,7 +36,7 @@ public class SearchTest {
     void blabla() throws IOException, InterruptedException {
         open("https://duckduckgo.com/");
         $("[name=q]").setValue("selenide").pressEnter();
-        $("[id=r1-0").shouldHave(text("selenide.org"));
+        $("[id=r1-0]").shouldHave(text("selenide.org"));
 
 
         HttpClient client = HttpClient.newBuilder()
